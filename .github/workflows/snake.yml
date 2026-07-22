@@ -13,6 +13,37 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: set up python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: install requests
+        run: pip install requests
+
+      - name: update commit count
+        env:
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+        run: python scripts/update_commit_count.py
+
+      - name: commit readme changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "update commit count" || echo "No changes to commit"
+
+      - name: push readme changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+
       - name: generate snake
         uses: Platane/snk@v3
         with:
