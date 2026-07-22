@@ -18,18 +18,15 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: set up python
-        uses: actions/setup-python@v5
+      - name: set up node
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.x'
+          node-version: '20'
 
-      - name: install requests
-        run: pip install requests
-
-      - name: update commit count
+      - name: update contribution count
         env:
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
-        run: python scripts/update_commit_count.py
+        run: node scripts/update-snake-title.js
 
       - name: commit readme changes
         run: |
