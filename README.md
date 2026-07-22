@@ -14,3 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+## 🐍 Snake
+![snake gif](https://raw.githubusercontent.com/TiagoCoutinho3/TiagoCoutinho3/output/github-contribution-grid-snake.svg#gh-light-mode-only)
+![snake gif dark](https://raw.githubusercontent.com/TiagoCoutinho3/TiagoCoutinho3/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
