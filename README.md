@@ -2,7 +2,7 @@
 
 <!-- DAILY_INFO_START -->
 23/07/2026
-Rio de Janeiro, +22°C ⛅
+Rio de Janeiro, +72°F ⛅
 <!-- DAILY_INFO_END -->
 
 <!--
