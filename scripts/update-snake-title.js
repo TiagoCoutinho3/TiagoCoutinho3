@@ -50,7 +50,7 @@ function getWeatherEmoji(conditionText, rawEmoji) {
 
 async function fetchWeather() {
   try {
-    const res = await fetch('https://wttr.in/Rio_de_Janeiro?format=%t|%C|%c', {
+    const res = await fetch('https://wttr.in/Rio_de_Janeiro?m&format=%t|%C|%c', {
       headers: {
         'User-Agent': 'curl/7.68.0'
       }
