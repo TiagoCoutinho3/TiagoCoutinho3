@@ -1,5 +1,10 @@
 ## Hi there 👋
 
+<!-- DAILY_INFO_START -->
+23/07/2026
+Rio de Janeiro, +22°C ⛅
+<!-- DAILY_INFO_END -->
+
 <!--
 **TiagoCoutinho3/TiagoCoutinho3** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
