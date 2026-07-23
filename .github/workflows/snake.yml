@@ -33,7 +33,8 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add README.md
-          git commit -m "update commit count" || echo "No changes to commit"
+          git commit -m "update readme data and commit count" || echo "No changes to commit"
+
 
       - name: push readme changes
         uses: ad-m/github-push-action@master
