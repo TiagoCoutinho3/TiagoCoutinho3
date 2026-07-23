@@ -86,10 +86,10 @@ function updateReadme(contributionCount, weatherInfo, dateStr) {
   const readmePath = path.join(__dirname, '..', 'README.md');
   let content = fs.readFileSync(readmePath, 'utf8');
 
-  const newTitle = `## 🐍 Snake (${contributionCount.toLocaleString()} contributions) { #snake }`;
+  const newTitle = `## ${contributionCount.toLocaleString()} contributions in the last year`;
 
   content = content.replace(
-    /## 🐍 Snake(?: \(\d+(?:,\d+)* (?:commits|contributions)\))?(?: \{ #snake \})?/,
+    /## (?:🐍 Snake.*|\d+(?:,\d+)* contributions in the last year)/,
     newTitle
   );
 
